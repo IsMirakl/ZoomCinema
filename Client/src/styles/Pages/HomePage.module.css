@@ -1,0 +1,11 @@
+:root {
+    --background-color: #000000;
+    --surface-color: #1A1A1A;
+    --secondary-color: #FF9E1F;
+    --primary-color: #FF000A;
+    --family-font: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+}
