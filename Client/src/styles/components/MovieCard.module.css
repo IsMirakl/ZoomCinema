@@ -1,0 +1,79 @@
+:root{
+    --family-font: "Inter", sans-serif;
+}
+
+.movieCardWrapper {
+    width: 179px;
+}
+
+.movieCard {
+    width: 179px;
+    height: 315px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(179px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+* {
+    color: white;
+    font-family: var(--family-font);
+}
+
+.movieInfo {
+    padding: 0 5px;
+}
+
+.movieTitle {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.movieDetails {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.cardDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+       background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+    overflow-y: auto;
+    z-index: 3;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.movieCard:hover .cardDescription {
+    transform: translateY(0);
+}
+
+.movieCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
