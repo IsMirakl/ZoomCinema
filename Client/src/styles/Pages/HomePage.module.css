@@ -9,3 +9,15 @@
 body{
     background-color: var(--background-color);
 }
+
+
+.headingCategory{
+    margin: 25px;
+}
+
+.noveltyCategory,
+.popularCategory,
+.popularCategory {
+    margin-bottom: 85px;
+    margin-left: 30px;
+}

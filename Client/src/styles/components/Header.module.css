@@ -7,9 +7,9 @@
 }
 
 .header {
-    height: 92px;
+    height: 5.7rem;
     background-color: var(--surface-color);
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .headerContainer {

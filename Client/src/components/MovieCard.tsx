@@ -26,7 +26,7 @@ const MovieCard: React.FC<MovieCardProps> = ({title, imageUrl, description, year
 const MovieList: React.FC = () => {
     return (
         <div className={styles.moviesGrid}>
-            {mockMovies.map(movie => (
+            {mockMovies.slice(0, 6).map(movie => (
                 <MovieCard key={movie.id} {...movie}/>
             ))}
         </div>

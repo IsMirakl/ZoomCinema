@@ -1,0 +1,25 @@
+:root {
+    --background-color: #000000;
+    --surface-color: #1A1A1A;
+    --secondary-color: #FF9E1F;
+    --primary-color: #FF000A;
+    --family-font: "Inter", sans-serif;
+}
+
+
+.footer{
+    height: 18rem;
+    background-color: var(--surface-color);
+}
+
+.container{
+    padding: 0 8rem 0 8rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.container > div:not(:first-child){
+    margin-left: auto;
+}
