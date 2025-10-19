@@ -2,20 +2,27 @@
     --family-font: "Inter", sans-serif;
 }
 
+/* Главный контейнер - убираем ограничения */
 .movieCardWrapper {
     width: 11rem;
-    transition: all 0.5s ease-in-out;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
-.movieCardWrapper:hover{
+/* При наведении поднимаем выше всех и увеличиваем */
+.movieCardWrapper:hover {
     transform: scale(1.1);
+    z-index: 100; /* Очень высокий z-index чтобы было поверх всего */
 }
 
+/* Контейнер карточки */
 .movieCard {
     width: 11rem;
     height: 20rem;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Оставляем hidden только для самой картинки */
     border-radius: 8px;
     margin-bottom: 0.6rem;
 }
@@ -56,7 +63,6 @@
 }
 
 .cardDescription {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -84,3 +90,12 @@
     object-fit: cover;
 }
 
+/* ОБЯЗАТЕЛЬНО: Убираем overflow у слайдов */
+.swiper-slide {
+    overflow: visible !important;
+}
+
+/* И у самого Swiper */
+.swiper {
+    overflow: visible !important;
+}
