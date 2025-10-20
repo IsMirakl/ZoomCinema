@@ -63,6 +63,72 @@ export const mockMovies: MovieCardProps[] = [
     year: "1994",
     duration: "142 мин",
     rating: "8.8"
+<<<<<<< HEAD
+=======
+  },
+  {
+   id: "9",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+   {
+   id: "10",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+  {
+   id: "11",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+   {
+   id: "12",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+   {
+   id: "13",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+   {
+   id: "14",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+  },
+   {
+   id: "15",
+    title: "Форрест Гамп",
+    imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
+    description: "История простого парня из Алабамы, который невольно становится свидетелем ключевых событий американской истории.",
+    year: "1994",
+    duration: "142 мин",
+    rating: "8.8"
+>>>>>>> develop
   }
 ];
 

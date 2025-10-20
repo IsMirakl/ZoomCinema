@@ -2,6 +2,7 @@
     --family-font: "Inter", sans-serif;
 }
 
+<<<<<<< HEAD
 .movieCardWrapper {
     width: 179px;
 }
@@ -13,13 +14,43 @@
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 10px;
+=======
+/* Главный контейнер - убираем ограничения */
+.movieCardWrapper {
+    width: 11rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* При наведении поднимаем выше всех и увеличиваем */
+.movieCardWrapper:hover {
+    transform: scale(1.1);
+    z-index: 100; /* Очень высокий z-index чтобы было поверх всего */
+}
+
+/* Контейнер карточки */
+.movieCard {
+    width: 11rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden; /* Оставляем hidden только для самой картинки */
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+>>>>>>> develop
 }
 
 .moviesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(179px, 1fr));
+<<<<<<< HEAD
     gap: 20px;
     padding: 20px;
+=======
+    gap: 1.25rem;
+    padding: 1.25rem;
+>>>>>>> develop
 }
 
 * {
@@ -56,8 +87,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+<<<<<<< HEAD
     padding: 15px;
        background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
+=======
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
+>>>>>>> develop
     transition: transform 0.3s ease;
     transform: translateY(100%);
     overflow-y: auto;
@@ -76,4 +112,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+<<<<<<< HEAD
+=======
+}
+
+/* ОБЯЗАТЕЛЬНО: Убираем overflow у слайдов */
+.swiper-slide {
+    overflow: visible !important;
+}
+
+/* И у самого Swiper */
+.swiper {
+    overflow: visible !important;
+>>>>>>> develop
 }
