@@ -37,7 +37,6 @@ const MovieSlider: React.FC = () => {
       spaceBetween={30}
       slidesPerView="auto"
       freeMode={true}
-      style={{ overflow: 'visible' }}
     >
       {mockMovies.map((movie) => (
         <SwiperSlide 
