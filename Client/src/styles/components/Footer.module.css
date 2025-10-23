@@ -23,3 +23,24 @@
 .container > div:not(:first-child){
     margin-left: auto;
 }
+
+
+.sectionMain > p{
+    padding-top: 1.25rem;
+}
+
+.contactsLinks,
+.helpLinks,
+.companyLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+}
+
+.contactsLinks,
+.helpLinks,
+.companyLinks a{
+    text-decoration: underline;
+    font-size: 14px;
+}

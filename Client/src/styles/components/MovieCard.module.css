@@ -2,7 +2,7 @@
     --family-font: "Inter", sans-serif;
 }
 
-.movieSliderContainer {
+.sliderContainer {
     width: 100%;
     overflow: hidden;
     padding: 20px 0;
@@ -94,10 +94,45 @@
     object-fit: cover;
 }
 
+
 .swiper-slide {
     overflow: visible !important;
 }
 
 .swiper {
     overflow: visible !important;
+    padding: 0 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 40px !important;
+    opacity: 0.8;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 0 40px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 30px !important;
+    }
+    
+    .movieCardWrapper:hover {
+        transform: scale(1.05);
+    }
 }

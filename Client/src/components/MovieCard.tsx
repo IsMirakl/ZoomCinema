@@ -31,25 +31,28 @@ const MovieCard: React.FC<MovieCardProps> = ({ title, imageUrl, description, yea
 
 const MovieSlider: React.FC = () => {
   return (
-    <Swiper
-      modules={[Navigation, Scrollbar]}
-      navigation
-      spaceBetween={30}
-      slidesPerView="auto"
-      freeMode={true}
-    >
-      {mockMovies.map((movie) => (
-        <SwiperSlide 
-          key={movie.id} 
-          style={{ 
-            width: "11rem", 
-            overflow: "visible"
-          }}
-        >
-          <MovieCard {...movie} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.sliderContainer}> 
+      <Swiper
+        modules={[Navigation, Scrollbar]}
+        navigation
+        spaceBetween={30}
+        slidesPerView="auto"
+        freeMode={true}
+        style={{ overflow: 'visible' }}
+      >
+        {mockMovies.map((movie) => (
+          <SwiperSlide 
+            key={movie.id} 
+            style={{ 
+              width: "11rem", 
+              overflow: "visible"
+            }}
+          >
+            <MovieCard {...movie} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
