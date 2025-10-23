@@ -1,19 +1,6 @@
 import Header from "../components/Header"
 import MovieList from "../components/MovieCard";
-<<<<<<< HEAD
-import styles from "../styles/Pages/HomePage.module.css"
 
-const HeaderPage: React.FC = () => {
-    return (
-        <>
-        <Header />
-        <MovieList />
-        </>
-    )
-}
-
-export default HeaderPage;
-=======
 import { Banner } from "../components/Banner";
 
 import styles from "../styles/Pages/HomePage.module.css"
@@ -45,4 +32,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
->>>>>>> develop
