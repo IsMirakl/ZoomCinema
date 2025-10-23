@@ -1,0 +1,113 @@
+:root {
+    --background-color: #000000;
+    --surface-color: #1A1A1A;
+    --secondary-color: #FF9E1F;
+    --primary-color: #FF000A;
+    --family-font: "Inter", sans-serif;
+}
+
+.header {
+    height: 5.7rem;
+    background-color: var(--surface-color);
+    padding: 0 1.25rem;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--family-font);
+}
+
+.logo a:hover {
+    color: var(--secondary-color);
+}
+
+.navList {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.navItem {
+    margin: 0;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: var(--family-font);
+}
+
+.navLink:hover {
+    color: var(--secondary-color);
+    background-color: rgba(255, 158, 31, 0.1);
+}
+
+.authButton {
+    flex: 0 0 auto;
+}
+
+.authLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: var(--family-font);
+}
+
+.authLink:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 1rem 20px;
+    }
+    
+    .headerContainer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .navUl {
+        gap: 1rem;
+    }
+    
+    .navLink {
+        padding: 0.5rem;
+    }
+}
