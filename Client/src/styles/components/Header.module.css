@@ -8,6 +8,7 @@
 
 .header {
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 92px;
     background-color: var(--surface-color);
     padding: 0 20px;
@@ -16,6 +17,11 @@
     background-color: var(--surface-color);
     padding: 0 1.25rem;
 >>>>>>> develop
+=======
+    height: 5.7rem;
+    background-color: var(--surface-color);
+    padding: 0 1.25rem;
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 }
 
 .headerContainer {

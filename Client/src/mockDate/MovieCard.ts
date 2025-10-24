@@ -64,7 +64,10 @@ export const mockMovies: MovieCardProps[] = [
     duration: "142 мин",
     rating: "8.8"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
   },
   {
    id: "9",
@@ -128,6 +131,7 @@ export const mockMovies: MovieCardProps[] = [
     year: "1994",
     duration: "142 мин",
     rating: "8.8"
+<<<<<<< HEAD
 >>>>>>> develop
   }
 ];
@@ -141,3 +145,7 @@ export const mockMovie: MovieCardProps = {
   duration: "169 мин",
   rating: "8.6"
 };
+=======
+  }
+];
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import type { MovieCardProps } from "../types/MovieCardProps";
 import styles from "../styles/components/MovieCard.module.css";
 import { mockMovies } from "../mockDate/MovieCard";
@@ -35,6 +36,8 @@ const MovieList: React.FC = () => {
 }
 export default MovieList;
 =======
+=======
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -68,6 +71,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ title, imageUrl, description, yea
 
 const MovieSlider: React.FC = () => {
   return (
+<<<<<<< HEAD
     <Swiper
       modules={[Navigation, Scrollbar]}
       navigation
@@ -93,3 +97,31 @@ const MovieSlider: React.FC = () => {
 
 export default MovieSlider;
 >>>>>>> develop
+=======
+    <div className={styles.sliderContainer}> 
+      <Swiper
+        modules={[Navigation, Scrollbar]}
+        navigation
+        spaceBetween={30}
+        slidesPerView="auto"
+        freeMode={true}
+        style={{ overflow: 'visible' }}
+      >
+        {mockMovies.map((movie) => (
+          <SwiperSlide 
+            key={movie.id} 
+            style={{ 
+              width: "11rem", 
+              overflow: "visible"
+            }}
+          >
+            <MovieCard {...movie} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default MovieSlider;
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd

@@ -3,6 +3,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .movieCardWrapper {
     width: 179px;
 }
@@ -16,6 +17,15 @@
     margin-bottom: 10px;
 =======
 /* Главный контейнер - убираем ограничения */
+=======
+.sliderContainer {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+}
+
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 .movieCardWrapper {
     width: 11rem;
     flex-shrink: 0;
@@ -24,6 +34,7 @@
     z-index: 1;
 }
 
+<<<<<<< HEAD
 /* При наведении поднимаем выше всех и увеличиваем */
 .movieCardWrapper:hover {
     transform: scale(1.1);
@@ -31,19 +42,33 @@
 }
 
 /* Контейнер карточки */
+=======
+.movieCardWrapper:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 .movieCard {
     width: 11rem;
     height: 20rem;
     position: relative;
+<<<<<<< HEAD
     overflow: hidden; /* Оставляем hidden только для самой картинки */
     border-radius: 8px;
     margin-bottom: 0.6rem;
 >>>>>>> develop
+=======
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 }
 
 .moviesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(179px, 1fr));
+<<<<<<< HEAD
 <<<<<<< HEAD
     gap: 20px;
     padding: 20px;
@@ -51,6 +76,10 @@
     gap: 1.25rem;
     padding: 1.25rem;
 >>>>>>> develop
+=======
+    gap: 1.25rem;
+    padding: 1.25rem;
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 }
 
 * {
@@ -88,12 +117,17 @@
     right: 0;
     bottom: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 15px;
        background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
 =======
     padding: 1rem;
     background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
 >>>>>>> develop
+=======
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(126, 26, 26, 0.95) 0%, rgba(161, 13, 13, 0.95) 100%);
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
     transition: transform 0.3s ease;
     transform: translateY(100%);
     overflow-y: auto;
@@ -113,16 +147,61 @@
     height: 100%;
     object-fit: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 }
 
 /* ОБЯЗАТЕЛЬНО: Убираем overflow у слайдов */
+=======
+}
+
+
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 .swiper-slide {
     overflow: visible !important;
 }
 
+<<<<<<< HEAD
 /* И у самого Swiper */
 .swiper {
     overflow: visible !important;
 >>>>>>> develop
+=======
+.swiper {
+    overflow: visible !important;
+    padding: 0 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 40px !important;
+    opacity: 0.8;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 0 40px;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 30px !important;
+    }
+    
+    .movieCardWrapper:hover {
+        transform: scale(1.05);
+    }
+>>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
 }

@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
                 <div> 
                     <h4>О компании</h4>
                     <div className={styles.companyLinks}>
-                        <Link>Документы</Link>
-                        <Link>Пользовательское соглашение</Link>
+                        <Link to="">Документы</Link>
+                        <Link to="">Пользовательское соглашение</Link>
                     </div>
                 </div>
             </div>
