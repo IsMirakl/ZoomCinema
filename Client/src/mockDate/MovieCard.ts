@@ -63,11 +63,6 @@ export const mockMovies: MovieCardProps[] = [
     year: "1994",
     duration: "142 мин",
     rating: "8.8"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
   },
   {
    id: "9",
@@ -131,21 +126,6 @@ export const mockMovies: MovieCardProps[] = [
     year: "1994",
     duration: "142 мин",
     rating: "8.8"
-<<<<<<< HEAD
->>>>>>> develop
   }
 ];
 
-export const mockMovie: MovieCardProps = {
-  id: "6",
-  title: "Интерстеллар",
-  imageUrl: "https://cdn.mirage.ru/images/film/7000/small/p7001.jpg",
-  description: "Группа исследователей путешествует через червоточину в космосе в поисках нового дома для человечества.",
-  year: "2014",
-  duration: "169 мин",
-  rating: "8.6"
-};
-=======
-  }
-];
->>>>>>> de71392e4310b5f46478b23ec0d8039d8bfd59dd
