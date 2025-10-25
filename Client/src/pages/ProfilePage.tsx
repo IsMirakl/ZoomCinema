@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import style from '../styles/Pages/ProfilePage.module.css';
 import Header from '../components/Header';
 
@@ -7,6 +9,8 @@ import levelStat from '../assets/icons/levelStats.svg';
 import calendarStat from '../assets/icons/calendarStats.svg';
 
 const ProfilePage: React.FC = () => {
+
+    const [active, setActive] = useState<'tickets' | 'archive'>('tickets');
     return (
         <>
             <Header />
@@ -67,8 +71,16 @@ const ProfilePage: React.FC = () => {
             <div className={style.profileTickets}>
                 <div>
                     <nav className={style.profileTicketsNav}>
-                        <p>Мои билеты</p>
-                        <p><span>Архив билетов</span></p>
+                        <a href='#tickets' className={active === 'tickets' ? style.active : style.disabled} onClick={(e) => {
+                            e.preventDefault();
+                            setActive('tickets')
+                        }}>Мои билеты</a>
+                        <a href="#archive" className={active === 'archive' ? style.active : style.disabled}
+                         onClick={(e) => {
+                            e.preventDefault();
+                            setActive('archive')
+                        }}
+                        >Архив Билетов</a>
                     </nav>
                 </div>
             </div>

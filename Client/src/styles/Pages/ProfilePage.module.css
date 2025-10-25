@@ -61,7 +61,7 @@
 }
 
 .statItem{
-    width: 171px;
+    width: 224px;
     height: 80px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -111,6 +111,7 @@
 
 .profileTickets{
     margin-top: 77px;
+    margin-left: 50px;
 }
 
 
@@ -119,10 +120,38 @@
     gap: 20px;
 }
 
-.profileTicketsNav p{
+.profileTicketsNav a{
     font-family: var(--family-font);
     font-size: 24px;
     font-weight: 600;
+    position: relative;
+}
+
+.profileTicketsNav a.active {
+    color: #fff;
+}
+
+.profileTicketsNav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+.profileTicketsNav a.active::after {
+    width: 100%;
+}
+
+.profileTicketsNav a:hover {
+    color: #fff;
+}
+
+.disabled{
+   color: rgb(105, 105, 105); 
 }
 
 span{
