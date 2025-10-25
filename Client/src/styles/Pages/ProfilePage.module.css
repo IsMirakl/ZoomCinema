@@ -1,0 +1,113 @@
+.mainInformationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1087px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 35px;
+    gap: 30px;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 77px;
+}
+
+.profileSection{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.profileAvatar{
+    width: 132px;
+    height: 132px;
+}
+
+.profileAvatar > a > img{
+    width: 132px;
+    height: 132px;
+    border-radius: 100%;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+    flex: 1;
+}
+
+.profileInfo > p {
+    font-family: var(--family-font);
+    font-size: 18px;
+}
+
+.profileStatistics{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.statItem{
+    width: 171px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.statHeader{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.statHeader > p{
+    font-family: var(--family-font);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+}
+
+.statValue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statValue > p{
+    font-family: var(--family-font);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.statItem:hover{
+    transform: scale(1.1);
+    border: orange 1px solid;
+}
+
+.profileTickets{
+    
+}
