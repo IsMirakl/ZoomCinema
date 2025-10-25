@@ -20,7 +20,7 @@ const ProfilePage: React.FC = () => {
                         </div>
                         <div className={style.profileInfo}>     
                             <p>UserName</p>
-                            <p>email@test.ru</p>
+                           <p><span>danya22132@test.ru</span></p>
                         </div>
                     </div>
                     
@@ -66,7 +66,10 @@ const ProfilePage: React.FC = () => {
             </div>
             <div className={style.profileTickets}>
                 <div>
-                    
+                    <nav className={style.profileTicketsNav}>
+                        <p>Мои билеты</p>
+                        <p><span>Архив билетов</span></p>
+                    </nav>
                 </div>
             </div>
         </>

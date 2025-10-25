@@ -45,6 +45,7 @@
     flex: 1;
 }
 
+
 .profileInfo > p {
     font-family: var(--family-font);
     font-size: 18px;
@@ -109,5 +110,21 @@
 }
 
 .profileTickets{
-    
+    margin-top: 77px;
+}
+
+
+.profileTicketsNav{
+    display: flex;
+    gap: 20px;
+}
+
+.profileTicketsNav p{
+    font-family: var(--family-font);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+span{
+    color: rgb(105, 105, 105);
 }

@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({
             <div className={styles.headerContainer}>
                 <div className={styles.logo}>
                     <NavLink to='/home'>
-                    <span>{siteName}</span>
+                    {siteName}
                     </NavLink>
                 </div>
                 <nav className={styles.navList}>
